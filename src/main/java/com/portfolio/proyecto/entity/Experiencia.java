@@ -22,17 +22,15 @@ public class Experiencia {
     private String fin;
     @Column(columnDefinition = "TEXT")
     private String descripcion;
-    private String logo_empresa;
-
+    
     public Experiencia() {
     }
 
-    public Experiencia(String empresa, String inicio, String fin, String descripcion, String logo_empresa) {
+    public Experiencia(String empresa, String inicio, String fin, String descripcion) {
         this.empresa = empresa;
         this.inicio = inicio;
         this.fin = fin;
-        this.descripcion = descripcion;
-        this.logo_empresa = logo_empresa;
+        this.descripcion = descripcion;    
     }
     
 }
